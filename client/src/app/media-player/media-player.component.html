@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{data.videoName}}</h1>
+<div mat-dialog-content>
+    <video #videoPlayer controls style="max-width: 500px;">
+        <source type="video/mp4">
+    </video>
+
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onCloseClick()">Close</button>
+</div>

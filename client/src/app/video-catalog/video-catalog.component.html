@@ -1,0 +1,36 @@
+<article class="container">
+    <section class="upload-form">
+        <div class="row" style="margin-bottom:15px;">
+            <div>
+                <div class="thumbnails" *ngIf="thumbnails.length > 0">
+                    <h2 style="text-align: center; margin-top: 20px;">Available videos</h2>
+                    <button type="button" class="btn btn-success" (click)="refreshVideos()"
+                        style="margin-bottom: 10px;">Refresh</button>
+                    <mat-grid-list cols="4" rowHeight="4:2" gutterSize="10px">
+                        <mat-grid-tile *ngFor="let thumbnail of thumbnails" [colspan]="1" [rowspan]="1"
+                            [style.background]="'#2196F3'">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div class="image-container">
+                                            <img [src]="getThumbnailImgPath(thumbnail)"
+                                                (click)="launchMediaPlayerDialog(thumbnail)"
+                                                style="width: 300px; margin-top: 20px; margin-bottom: 20px">
+                                            <div class="overlay" (click)="launchMediaPlayerDialog(thumbnail)"></div>
+                                            <img class="overlay" src="../../assets/cinema.png"
+                                                (click)="launchMediaPlayerDialog(thumbnail)"
+                                                style="width: 20%; height: 20%; position: absolute; top: calc(50% - 24px); left: calc(50% - 27px);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <mat-grid-tile-header style="height: 24px">
+                                <h3>{{thumbnail | videoNameFormatter}}</h3>
+                            </mat-grid-tile-header>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>

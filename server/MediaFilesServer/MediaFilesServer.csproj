@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\NewFolder\**" />
+    <Compile Remove="StaticFiles\NewFolder\**" />
+    <Content Remove="Resources\NewFolder\**" />
+    <Content Remove="StaticFiles\NewFolder\**" />
+    <EmbeddedResource Remove="Resources\NewFolder\**" />
+    <EmbeddedResource Remove="StaticFiles\NewFolder\**" />
+    <None Remove="Resources\NewFolder\**" />
+    <None Remove="StaticFiles\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NReco.VideoConverter" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="StaticFiles\Videos\" />
+  </ItemGroup>
+
+</Project>

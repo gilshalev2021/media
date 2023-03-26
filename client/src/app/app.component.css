@@ -1,0 +1,7 @@
+.section{
+    width: 900px;
+    border: 1px solid rgb(206, 195, 195);;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 1px 1px 1px gray;
+  }
