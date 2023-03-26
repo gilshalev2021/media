@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fON9p5E3XLStbtwXVhjsT9ms+pdxCdwmQqrOj0fZw0wJchVPyf9CFX++n3Wk6LVeoRWNTAnWn5xb2A/DySmLsQ==",
+  "success": true,
+  "projectFilePath": "C:\\temp\\KESHET\\server\\MediaFilesServer\\MediaFilesServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\nreco.videoconverter\\1.2.0\\nreco.videoconverter.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
